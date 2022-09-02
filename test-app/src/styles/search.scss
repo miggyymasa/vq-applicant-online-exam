@@ -81,3 +81,17 @@
         margin-left: 10px;
     }
   }
+
+  .country-detail-wrap {
+    border: 1px solid #000;
+    width: 600px;
+    margin-top: 60px;
+
+    .country-detail {
+        margin-top: 20px;
+    }
+
+    .country-flag {
+        height: 400px;
+    }
+}

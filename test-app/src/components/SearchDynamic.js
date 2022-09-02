@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import SearchIcon from '@material-ui/icons/Search';
 import CloseIcon from '@material-ui/icons/Close';
@@ -58,7 +59,7 @@ function SearchDynamic() {
             <div className="dropdown">
                 {result.map((result, index) => (
                     <div className="dropdown-row" key={index}>
-                        <a href="#">{result.name}</a>
+                        <Link to={ "country-details?country=" +  result.alpha2Code.toLowerCase() }>{result.name}</Link>
                     </div>
                 ))}
             </div>
